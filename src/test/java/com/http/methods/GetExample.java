@@ -12,8 +12,9 @@ public class GetExample {
 		
 
 	Response response=RestAssured.get("http://localhost:3000/posts");
-	//String data=response.getBody().print();
-	//System.out.println(data);
+	
+	response.getBody().prettyPrint();
+
 	System.out.println(response.getStatusCode());
 	Assert.assertEquals(response.getStatusCode(), 200);
 	System.out.println(response.getTime());

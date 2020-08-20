@@ -5,7 +5,7 @@
   },
   "weather": [
     {
-      "id": 800,
+      "id": 99,
       "main": "Clear",
       "description": "clear sky",
       "icon": "01d"
@@ -37,6 +37,6 @@
   },
   "timezone": "Estern",
   "id": 99,
-  "City name": "New York",
+  "City": "New York",
   "cod": 200
 }

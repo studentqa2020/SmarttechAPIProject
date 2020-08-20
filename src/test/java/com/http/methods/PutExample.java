@@ -17,12 +17,14 @@ public class PutExample {
 		request.header("Content-type","application/json");
 
 		JsonObject json= new JsonObject();
-		json.addProperty("id", "100");
-		json.addProperty("Name", "Smart tech IT Solution");
+		json.addProperty("Boro", "Bronx");
+		json.addProperty("City", "New York");
+		json.addProperty("Country", "USA");
+		json.addProperty("id", "200");
 		
 		
 		request.body(json.toString());
-		Response response = request.put("http://localhost:3000/posts/100");
+		Response response = request.put("http://localhost:3000/posts/200");
 		
 		int statuscode=response.getStatusCode();
 		System.out.println(statuscode);

@@ -17,7 +17,7 @@ public class PostExample {
 		json.addProperty("Boro", "Queens");
 		json.addProperty("City", "New York");
 		json.addProperty("Country", "USA");
-		json.addProperty("id", "100");
+		json.addProperty("id", "200");
 
 		RequestSpecification request = RestAssured.given();
 		request.header("Content-type", "application/json");
@@ -28,7 +28,7 @@ public class PostExample {
 		int statuscode = response.getStatusCode();
 		System.out.println(statuscode);
 
-		Assert.assertEquals(response.getStatusCode(), 400);
+		Assert.assertEquals(response.getStatusCode(), 201);
 		Assert.assertTrue(statuscode == 201);
 	}
 
